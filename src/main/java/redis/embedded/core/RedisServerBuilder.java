@@ -88,7 +88,7 @@ public final class RedisServerBuilder {
         setting("bind " + bind);
         tryResolveConfAndExec();
 
-        List<String> args = new ArrayList<String>();
+        List<String> args = new ArrayList<>();
         args.add(executable.getAbsolutePath());
 
         if (redisConf != null && !redisConf.isEmpty()) {

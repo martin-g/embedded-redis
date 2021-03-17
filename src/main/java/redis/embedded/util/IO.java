@@ -56,7 +56,7 @@ public enum IO {;
             String line; while ((line = reader.readLine()) != null) {
                 if (pattern.matcher(line).matches())
                     return true;
-                processOutput.append("\n").append(line);
+                processOutput.append('\n').append(line);
             }
         }
         return false;
